@@ -1,6 +1,6 @@
 from rest_framework import generics
 from .models import Post
-from ..users.serializers import PostSerializer, UserRegistrationSerializer
+from .serializers import PostSerializer
 
 
 

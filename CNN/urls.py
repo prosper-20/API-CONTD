@@ -23,7 +23,8 @@ urlpatterns = [
     path('', include ('blog.urls')),
     path('app/', include ('app.urls')), 
     path("api/", include("apis.urls")),  
-    path("post/", include("posts.urls"))               
+    path("post/", include("posts.urls")),
+    path("users/", include("users.urls"))           
 ]
 
 if settings.DEBUG:
