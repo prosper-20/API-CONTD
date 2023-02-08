@@ -43,8 +43,17 @@ INSTALLED_APPS = [
     'apis.apps.ApisConfig',
     'crispy_forms',
     'rest_framework',
-    'posts.apps.PostsConfig'
+    'posts.apps.PostsConfig',
+    'rest_framework.authtoken'
 ]
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
