@@ -12,6 +12,15 @@ class API_LIST_PAGE(ListCreateAPIView):
     serializer_class = NewsSerializer
 
 
+class API_DETAIL_PAGE(RetrieveUpdateDestroyAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializer
+    lookup_field = "slug"
+
+
+
+
+
 
 
 
