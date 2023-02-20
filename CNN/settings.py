@@ -95,11 +95,15 @@ WSGI_APPLICATION = 'CNN.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+DATABASES = {     
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'railway',
+    'USER': 'postgres',
+    'PASSWORD': 'vld9WGSBu2f86AyFt7Es',
+    'HOST': 'containers-us-west-40.railway.app',
+    'PORT': '6441'  
+} 
 }
 
 
